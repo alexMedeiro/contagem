@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISSÃO NORUEGA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MISSÃO NORUEGA</h1>
+    <div class="container">
+        <label for="goal">Defina a Meta (R$):</label>
+        <input type="number" id="goal" placeholder="Digite o valor da meta" />
+
+        <label for="collected">Valor Arrecadado (R$):</label>
+        <input type="number" id="collected" placeholder="Digite um valor arrecadado" />
+
+        <button onclick="addCollected()">Adicionar</button>
+
+        <div class="progress-bar" id="progressBar">
+            <div style="width: 0%;" id="progress"></div>
+        </div>
+
+        <p id="status">Progresso: 0%</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Valor (R$)</th>
+                    <th>Data e Hora</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
